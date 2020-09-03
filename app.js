@@ -48,7 +48,7 @@ app.use(
     secret: "yuhuuuu",
     resave: false,
     saveUninitialized: true,
-    cookie: { maxAge: 6000000 },
+    cookie: { maxAge: 600000 },
   })
 );
 // express-session
