@@ -61,7 +61,10 @@ module.exports = {
   },
 
   actionLogout: (req, res) => {
+    console.log(req.session);
     req.session.destroy();
+    console.log("Session setelah destroy");
+    console.log(req.session);
     res.redirect("/admin/signin");
   },
 
