@@ -3,6 +3,7 @@ var express = require("express");
 var path = require("path");
 var cookieParser = require("cookie-parser");
 var logger = require("morgan");
+const cors = require("cors");
 // bagian method PUT()
 const methodOverride = require("method-override");
 // bagian method PUT()
@@ -70,6 +71,9 @@ app.use(
 app.use("/", indexRouter);
 app.use("/users", usersRouter);
 // admin
+
+app.use(cors());
+
 app.use("/admin", adminRouter);
 app.use("/api/v1/member", apiRouter);
 
