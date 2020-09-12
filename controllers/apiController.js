@@ -197,7 +197,7 @@ module.exports = {
       res.status(201).json({ message: "Success Booking", booking });
     } catch (error) {
       console.log(error);
-      // res.status(500).json({ message: "Internal server error" });
+      res.status(500).json({ message: "Internal server error" });
     }
   },
 };
