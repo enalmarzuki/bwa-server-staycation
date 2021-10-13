@@ -29,6 +29,7 @@ module.exports = {
             perDocumentLimit: 1,
           },
         });
+        // tes
 
       const treasure = await Treasure.find();
       const treveler = await Treveler.find();
